@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: Scenario: Login Page should be launched and validated
+-------------------------------------------------------------------------------
+Tests run: 12, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 32.027 s - in Scenario: Login Page should be launched and validated
