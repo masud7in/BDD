@@ -1,4 +1,3 @@
-
 node{
   stage('SCM Checkout'){    
     git 'https://github.com/masud7in/BDD'
