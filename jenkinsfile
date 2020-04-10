@@ -1,11 +1,27 @@
-node{
-  stage('SCM Checkout'){    
-    git 'https://github.com/masud7in/BDD'
+pipeline{
+agent any{
+    steps{    
+      echo "building the code";
+      bat "mvn clean"
+    }
+ }
+  
+ stage('Test'){
+    steps{    
+      echo "Testing the code";
+      bat "mvn test"
+    }  
   }
-  stage('Compile-Package'){
-    def mvnHome = tool name: 'apache-maven-3.6.3', type: 'maven'
-    sh "${mvnHome}/mvn package"
-    
-    
+  stage('Compile'){
+    steps{    
+      echo "Compiling the code";
+      bat "mvn Compile"
+    }  
+  }   
+  stage('Deploy'){
+    steps{    
+      echo "Deploy the code";
+    }  
   }  
+}  
 }
