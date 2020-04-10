@@ -5,8 +5,7 @@ agent any
       echo "building the code"
       bat "mvn clean"
     }
- }
-  
+ }  
  stage('Test')
  {
     steps{    
@@ -28,4 +27,4 @@ agent any
     }  
   }  
 }  
-}
+
