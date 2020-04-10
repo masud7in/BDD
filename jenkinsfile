@@ -25,7 +25,7 @@ stages
 		steps
 		{    
 			echo "Compiling the code"
-			bat "mvn Compile"
+			bat "mvn compile"
 		}  
 	}   
 } 
