@@ -28,12 +28,5 @@ stages
 			bat "mvn Compile"
 		}  
 	}   
-	stage('Deploy')
-	{
-		steps
-		{    
-			echo "Deploy the code"
-		}  
-	}  
 } 
 } 
